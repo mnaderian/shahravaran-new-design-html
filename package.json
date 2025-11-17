@@ -15,7 +15,7 @@
   "type": "commonjs",
   "main": "index.html",
   "scripts": {
-    "dev": "@tailwindcss/cli i ./res/css/tailwind.css -o ./res/css/styles.css --watch",
-    "build": "@tailwindcss/cli i ./res/css/tailwind.css -o ./res/css/styles.css --minify"
+    "dev": "npx @tailwindcss/cli -i ./res/css/tailwind.css -o ./res/css/styles.css --watch",
+    "build": "npx @tailwindcss/cli -i ./res/css/tailwind.css -o ./res/css/styles.css --minify"
   }
 }

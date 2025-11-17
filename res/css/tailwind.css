@@ -1,1 +1,55 @@
 @import "tailwindcss";
+
+@theme {
+    --font-sans: 'vazir', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans--font-feature-settings: "ss01";
+}
+
+@layer base {
+    /* Vazirmatn Font */
+    @font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazirmatn/Vazirmatn-Thin.woff2") format("woff2");
+    font-weight: 100;
+    }
+    @font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazirmatn/Vazirmatn-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    }
+    @font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazirmatn/Vazirmatn-Light.woff2") format("woff2");
+    font-weight: 300;
+    }
+    @font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazirmatn/Vazirmatn-Regular.woff2") format("woff2");
+    font-weight: 400;
+    }
+    @font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazirmatn/Vazirmatn-Medium.woff2") format("woff2");
+    font-weight: 500;
+    }
+    @font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazirmatn/Vazirmatn-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    }
+    @font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazirmatn/Vazirmatn-Bold.woff2") format("woff2");
+    font-weight: 700;
+    }
+    @font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazirmatn/Vazirmatn-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    }
+    @font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazirmatn/Vazirmatn-Black.woff2") format("woff2");
+    font-weight: 900;
+    }
+}
