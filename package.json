@@ -1,0 +1,20 @@
+{
+  "name": "shahravaran-new-html",
+  "version": "1.0.0",
+  "description": "Shahravaran new design html implementation",
+  "keywords": [
+    "Shahravaran",
+    "news"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "github.com/mnaderian/shahravaran-new-design-html.git"
+  },
+  "license": "ISC",
+  "author": "Mahdi Naderian",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
