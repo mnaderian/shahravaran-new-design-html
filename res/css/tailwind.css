@@ -3,6 +3,7 @@
 @theme {
     --font-sans: 'vazir', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-sans--font-feature-settings: "ss01";
+    --color-primary: #197DDA;
 }
 
 @layer base {
