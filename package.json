@@ -17,5 +17,9 @@
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./res/css/tailwind.css -o ./res/css/styles.css --watch",
     "build": "npx @tailwindcss/cli -i ./res/css/tailwind.css -o ./res/css/styles.css --minify"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "pnpm": "^10.24.0"
   }
 }
