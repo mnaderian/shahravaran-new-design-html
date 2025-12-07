@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ mobileMenuOpen: false }">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shahravaran</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="text-2xl font-bold text-indigo-600">Shahravaran</div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#hero" class="hover:text-indigo-500">Home</a>
+        <a href="#features" class="hover:text-indigo-500">Features</a>
+        <a href="#portfolio" class="hover:text-indigo-500">Portfolio</a>
+        <a href="#contact" class="hover:text-indigo-500">Contact</a>
+      </nav>
+      <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path :class="{'hidden': mobileMenuOpen, 'inline-flex': !mobileMenuOpen}" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          <path :class="{'inline-flex': mobileMenuOpen, 'hidden': !mobileMenuOpen}" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div x-show="mobileMenuOpen" class="md:hidden bg-white border-t border-gray-200">
+      <a href="#hero" class="block p-4 hover:bg-gray-100">Home</a>
+      <a href="#features" class="block p-4 hover:bg-gray-100">Features</a>
+      <a href="#portfolio" class="block p-4 hover:bg-gray-100">Portfolio</a>
+      <a href="#contact" class="block p-4 hover:bg-gray-100">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="bg-gray-50 py-20">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-10">
+      <div class="md:w-1/2 space-y-6">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Welcome to Shahravaran</h1>
+        <p class="text-gray-700">High quality web solutions tailored for your business.</p>
+        <a href="#contact" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-500">Get Started</a>
+      </div>
+      <div class="md:w-1/2">
+        <!-- Inline SVG from home.svg -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-full h-auto text-indigo-600">
+          <!-- محتویات SVG که از home.svg استخراج می‌شود اینجا قرار می‌گیرد -->
+          <path fill="currentColor" d="M256 0L512 256H384V512H128V256H0L256 0z"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Our Features</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 border rounded-lg hover:shadow-lg transition">
+          <div class="mb-4">
+            <svg class="w-12 h-12 mx-auto text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Feature One</h3>
+          <p class="text-gray-600">Description of feature one.</p>
+        </div>
+        <div class="p-6 border rounded-lg hover:shadow-lg transition">
+          <div class="mb-4">
+            <svg class="w-12 h-12 mx-auto text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Feature Two</h3>
+          <p class="text-gray-600">Description of feature two.</p>
+        </div>
+        <div class="p-6 border rounded-lg hover:shadow-lg transition">
+          <div class="mb-4">
+            <svg class="w-12 h-12 mx-auto text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Feature Three</h3>
+          <p class="text-gray-600">Description of feature three.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="bg-gray-50 py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Portfolio</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/400x250" alt="Project 1" class="w-full h-auto">
+        </div>
+        <div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/400x250" alt="Project 2" class="w-full h-auto">
+        </div>
+        <div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
+          <img src="https://via.placeholder.com/400x250" alt="Project 3" class="w-full h-auto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto max-w-xl">
+      <h2 class="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <input type="email" placeholder="Your Email" class="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <textarea placeholder="Your Message" class="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+        <button type="submit" class="w-full bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-500">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Shahravaran. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
