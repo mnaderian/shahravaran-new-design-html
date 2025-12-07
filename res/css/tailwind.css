@@ -54,3 +54,9 @@
     font-weight: 900;
     }
 }
+
+@layer components {
+    .category {
+        @apply bg-radial-[at_20%_20%] from-sky-300 to-sky-900 to-75% text-white rounded-full py-3 px-5 text-sm text-center inline shadow-lg shadow-sky-700/50 hover:from-amber-300 hover:to-amber-900 hover:shadow-amber-700/50;
+    }
+}
