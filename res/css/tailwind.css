@@ -3,6 +3,7 @@
 @theme {
     --font-sans: 'vazir', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-sans--font-feature-settings: "ss01";
+    
     --color-primary: #197DDA;
 }
 
@@ -57,6 +58,6 @@
 
 @layer components {
     .category {
-        @apply bg-radial-[at_20%_20%] from-sky-300 to-sky-900 to-75% text-white rounded-full py-3 px-5 text-sm text-center inline shadow-lg shadow-sky-700/50 hover:from-amber-300 hover:to-amber-900 hover:shadow-amber-700/50;
+        @apply bg-radial-[at_20%_20%] from-sky-500 to-blue-800 to-75% text-white rounded-full py-3 px-5 text-sm text-center inline shadow-lg shadow-blue-800/50 hover:from-amber-300 hover:to-amber-900 hover:shadow-amber-700/50;
     }
 }
