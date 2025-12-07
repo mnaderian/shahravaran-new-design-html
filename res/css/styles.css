@@ -6,6 +6,7 @@
     --font-sans: 'vazir', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-sky-600: oklch(58.8% 0.158 241.966);
     --color-sky-700: oklch(50% 0.134 242.749);
@@ -528,6 +529,13 @@
   .placeholder\:text-stone-200 {
     &::placeholder {
       color: var(--color-stone-200);
+    }
+  }
+  .hover\:bg-amber-300 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-amber-300);
+      }
     }
   }
   .hover\:text-primary {
