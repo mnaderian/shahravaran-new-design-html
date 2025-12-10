@@ -1,11 +1,594 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>403 - Not Authorized</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شهرآوران</title>
+    <link rel="stylesheet" href="./res/css/styles.css">
 </head>
-<body>
-  ERROR 403 - You are not authorized to access this page.
+<body class="antialiased bg-stone-100">
+    <main>
+        <!-- Header -->
+        <div class="flex justify-between items-center bg-stone-50 rounded-full shadow-md w-[1200px] mt-5 mb-8 mx-auto py-3 px-5">
+            <!-- logo -->
+            <div class="flex items-center gap-3">
+                <img src="./res/svg/logo.svg" alt="لوگوی شهرآوران" class="w-10 h-auto">
+                <div class="text-primary font-extrabold text-2xl">شــــهرآوران</div>
+            </div>
+            <!-- main menu -->
+            <div>
+                <ul class="flex items-center gap-4 text-sm">
+                    <li class="flex items-center gap-1">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4.5 text-primary">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                        </div>
+                        <div>
+                            <a href="#" class="text-stone-500 hover:text-primary">صفحه اصلی</a>
+                        </div>
+                    </li>
+                    <li class="flex items-center gap-1">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4.5 text-primary">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                            </svg>
+                        </div>
+                        <div>
+                            <a href="#" class="text-stone-500 hover:text-primary">ارتباط با ما</a>
+                        </div>
+                    </li>
+                    <li class="flex items-center gap-1">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4.5 text-primary">
+                               <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <a href="#" class="text-stone-500 hover:text-primary">درباره ما</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- tools -->
+            <div class="flex items-center">
+                <div>
+                    <form action="#" class="flex items-center relative ml-2">
+                        <input type="text" placeholder="جستجو..." class="border-2 border-stone-200 rounded-full placeholder:text-stone-200 pl-8 px-3 py-1 text-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 absolute left-2 text-stone-300">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </form>
+                </div>
+                <div>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-amber-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured -->
+        <div class="grid grid-cols-4 gap-8 px-1 w-[1200px] mx-auto">
+          <!-- news list -->
+          <div>
+            <ul class="space-y-6">
+              <li class="flex gap-x-2">
+                <img class="size-20 rounded-2xl shadow-xl object-cover" src="https://media.mehrnews.com/d/2025/11/15/3/5774225.jpg?ts=1763189742767" alt="تصویر خبر">
+                <p class="font-medium text-sm mt-2">صندوق بازنشستگی کشوری دستورالعمل بازنشستگی مادران شاغل را ابلاغ کرد</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img class="size-20 rounded-2xl shadow-xl object-cover" src="https://media.mehrnews.com/d/2024/04/19/3/4951281.jpg?ts=1713531114149" alt="تصویر خبر">
+                <p class="font-medium text-sm mt-2">حزب‌الله: تهدید و تجاوزات دشمن تاثیری بر موضع ما ندارد</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img class="size-20 rounded-2xl shadow-xl object-cover" src="https://media.mehrnews.com/d/2025/11/02/3/5753891.jpg?ts=1762086772587" alt="تصویر خبر">
+                <p class="font-medium text-sm mt-2">مهاجرانی:تضعیف سرمایه اجتماعی توان عبور جمعی از چالش‌ها را کاهش می‌دهد</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img class="size-20 rounded-2xl shadow-xl object-cover" src="https://media.mehrnews.com/d/2025/07/28/3/5617313.jpg?ts=1753683185158" alt="تصویر خبر">
+                <p class="font-medium text-sm mt-2">هزینه هر متر مکعب شیرین سازی و انتقال آب به فلات مرکزی ۳۰۰هزار تومان</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img class="size-20 rounded-2xl shadow-xl object-cover" src="https://media.mehrnews.com/d/2024/04/19/3/4951281.jpg?ts=1713531114149" alt="تصویر خبر">
+                <p class="font-medium text-sm mt-2">حزب‌الله: تهدید و تجاوزات دشمن تاثیری بر موضع ما ندارد</p>
+              </li>
+            </ul>
+          </div>
+          <!-- main slider -->
+          <div class="bg-white rounded-3xl shadow-lg col-span-2 overflow-hidden p-2">
+            <div class="rounded-2xl overflow-hidden">
+              <img class="w-full h-94 object-cover" src="https://media.mehrnews.com/d/2025/10/20/3/5733227.jpg?ts=1760954848466" alt="تصویر اصلی">
+            </div>
+            <p class="bg-sky-600 text-white text-center rounded-2xl mt-2 py-4 px-2 font-semibold text-base">
+              هشدار نسبت به پیامدهای تحرکات نظامی آمریکا در منطقه کارائیب
+            </p>
+            <div>
+              <ul class="flex gap-2 items-center place-content-center mt-3">
+                <li class="rounded-full size-4 bg-gray-100 hover:bg-amber-300"></li>
+                <li class="rounded-full size-4 bg-gray-100 hover:bg-amber-300"></li>
+                <li class="rounded-full size-4 bg-gray-100 hover:bg-amber-300"></li>
+                <li class="rounded-full size-4 bg-gray-100 hover:bg-amber-300"></li>
+                <li class="rounded-full size-4 bg-gray-100 hover:bg-amber-300"></li>
+                <li class="rounded-full size-4 bg-gray-100 hover:bg-amber-300"></li>
+              </ul>
+            </div>
+          </div>
+          <!-- news list -->
+          <div>
+            <ul class="space-y-6">
+              <li class="flex gap-x-2">
+                <img class="size-20 rounded-2xl shadow-xl object-cover" src="https://media.mehrnews.com/d/2025/11/15/3/5773941.jpg?ts=1763180554023" alt="تصویر خبر">
+                <p class="font-medium text-sm mt-2">درخشش دانش‌آموزان مخترع ایرانی در مسابقات جهانی اندونزی ۲۰۲۵</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img class="size-20 rounded-2xl shadow-xl object-cover" src="https://media.mehrnews.com/d/2025/03/11/3/5417106.jpg?ts=1741685292746" alt="تصویر خبر">
+                <p class="font-medium text-sm mt-2">زنگ خطر برای آینده منابع طبیعی؛ طمع قاچاقچیان چوب بیشتر شده است</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img class="size-20 rounded-2xl shadow-xl object-cover" src="https://media.mehrnews.com/d/2025/11/13/3/5772455.jpg?ts=1763056198126" alt="تصویر خبر">
+                <div class="space-y-1">
+                  <p class="text-xs font-normal text-blue-700 mt-2">بازیهای کشورهای اسلامی - ریاض</p>
+                  <p class="font-medium text-sm">زنان «تنیس» را «روی میز» نگه داشتند؛ پایان طلایی در یک ساعت</p>
+                </div>
+              </li>
+              <li class="flex gap-x-2">
+                <img class="size-20 rounded-2xl shadow-xl object-cover" src="https://media.mehrnews.com/d/2020/05/10/3/3446995.jpg" alt="تصویر خبر">
+                <p class="font-medium text-sm mt-2">تامین مالی طرح‌های فرهنگی به بلوغ نرسیده/ پیوند سرمایه‌گذاری با فرهنگ</p>
+              </li>
+              <li class="flex gap-x-2">
+                <img class="size-20 rounded-2xl shadow-xl object-cover" src="https://media.mehrnews.com/d/2024/04/19/3/4951281.jpg?ts=1713531114149" alt="تصویر خبر">
+                <p class="font-medium text-sm mt-2">حزب‌الله: تهدید و تجاوزات دشمن تاثیری بر موضع ما ندارد</p>
+              </li>
+            </ul>
+          
+          </div>  
+        </div>
+
+        <!-- Categories -->
+        <div class="flex gap-2 place-content-center my-15 bg-stone-200 py-5 px-5">
+          <a href="#" class="category">موضوع</a>
+          <a href="#" class="category">اجتماعی</a>
+          <a href="#" class="category">ورزشی</a>
+          <a href="#" class="category">سیاسی</a>
+          <a href="#" class="category">اقتصادی</a>
+          <a href="#" class="category">فناوری</a>
+          <a href="#" class="category">بین الملل</a>
+          <a href="#" class="category">استانی</a>
+          <a href="#" class="category">سلامت</a>
+        </div>
+
+        <!-- Middle -->
+        <div class="grid grid-cols-2 gap-7 mb-10 w-[1200px] mx-auto">
+          <!-- main news -->
+          <div class="bg-white rounded-4xl shadow-xl px-5 py-7 flex flex-col gap-5">
+            <!-- news item -->
+            <div class="flex gap-4">
+              <img class="w-36 h-25 object-cover rounded-xl shadow-lg" src="https://media.mehrnews.com/d/2025/11/15/3/5774084.jpg?ts=1763185278583" alt="تصویر خبر">
+              <div>
+                <h3 class="font-semibold text-blue-900 text-base mb-2">توکنیزه کردن املاک، کلید خروج بازار مسکن از رکود است</h3>
+                <p class="text-xs font-light text-stone-700 leading-loose">کارشناس اقتصادی گفت: توکنیزه کردن املاک و بهره‌گیری از هوش مصنوعی، راه خروج بازار مسکن از رکود و جذب سرمایه‌های خرد است.</p>
+              </div>
+            </div>
+            <!-- news item -->
+            <div class="flex gap-4">
+              <img class="w-36 h-25 object-cover rounded-xl shadow-lg" src="https://media.mehrnews.com/d/2024/01/20/3/4823616.jpg?ts=1705737713617" alt="تصویر خبر">
+              <div>
+                <h3 class="font-semibold text-blue-900 text-base mb-2">از برگزیده‌شدن یک آهنگ تا برپایی چند کنسرت؛ اشعار شمس لنگرودی آلبوم شد</h3>
+                <p class="text-xs font-light text-stone-700 leading-loose">یکی از آهنگسازان و رهبر گروه کُر «پارسیکر» در تشریح تازه ترین فعالیت های موسیقایی خود از حضور در یک رویداد بین المللی و تولید و تدوین چند پروژه موسیقایی طی ماه های آینده خبر داد.</p>
+              </div>
+            </div>
+            <!-- news item -->
+            <div class="flex gap-4">
+              <img class="w-36 h-25 object-cover rounded-xl shadow-lg" src="https://media.mehrnews.com/d/2025/11/11/3/5768519.jpg?ts=1762853702127" alt="تصویر خبر">
+              <div>
+                <h3 class="font-semibold text-blue-900 text-base mb-2">بازسازی اعتماد و اصلاح حکمرانی در نظام بازنشستگی از حرف تا عمل</h3>
+                <p class="text-xs font-light text-stone-700 leading-loose">صندوق تأمین اجتماعی، امانت‌دار ذخایر نسل‌های متوالی از کارگران و بیمه‌شدگان است. هرگونه برداشت یا تسویه غیرواقعی بدهی دولت به سازمان، به معنای تضییع حقوق بازنشستگان آینده است.</p>
+              </div>
+            </div>
+            <!-- news item -->
+            <div class="flex gap-4">
+              <img class="w-36 h-25 object-cover rounded-xl shadow-lg" src="https://media.mehrnews.com/d/2025/11/11/3/5768406.jpg?ts=1762851073375" alt="تصویر خبر">
+              <div>
+                <h3 class="font-semibold text-blue-900 text-base mb-2">تحولات بازار طلا؛ رشد پی‌درپی قیمت‌ها در بازار جهانی و ایران</h3>
+                <p class="text-xs font-light text-stone-700 leading-loose">بازار طلا در هفته منتهی به ۲۳ آبان یکی از پرتلاطم‌ترین دوره‌های اخیر را تجربه کرد؛ جهش اونس جهانی و افزایش نرخ ارز موجب رشد کم‌سابقه قیمت طلا و سکه در بازار داخلی شد و رکورد جدید زد.</p>
+              </div>
+            </div>
+            <!-- news item -->
+            <div class="flex gap-4">
+              <img class="w-36 h-25 object-cover rounded-xl shadow-lg" src="https://media.mehrnews.com/d/2025/08/16/3/5639779.jpg?ts=1755326980814" alt="تصویر خبر">
+              <div>
+                <h3 class="font-semibold text-blue-900 text-base mb-2">کدام کشورها بیشترین نفت را در طول نسل‌کشی غزه به اسرائیل فروختند</h3>
+                <p class="text-xs font-light text-stone-700 leading-loose">۲۵ کشور جهان با علم به جنایات رژیم صهیونیستی در غزه در طول این دو سال به رژیم صهیونیستی نفت فروختند.</p>
+              </div>
+            </div>
+            <!-- news item -->
+            <div class="flex gap-4">
+              <img class="w-36 h-25 object-cover rounded-xl shadow-lg" src="https://media.mehrnews.com/d/2025/10/13/3/5723978.jpg?ts=1760369085717" alt="تصویر خبر">
+              <div>
+                <h3 class="font-semibold text-blue-900 text-base mb-2">دریادار سیاری: برای ارتقای توان دفاعی همیشه برنامه داریم</h3>
+                <p class="text-xs font-light text-stone-700 leading-loose">رئیس ستاد و معاون هماهنگ‌کننده ارتش گفت: ما برای ارتقای توانمندی نیروهای مسلح متناسب با تهدید، همیشه برنامه داریم.</p>
+              </div>
+            </div>
+            <!-- news item -->
+            <div class="flex gap-4">
+              <img class="w-36 h-25 object-cover rounded-xl shadow-lg" src="https://media.mehrnews.com/d/2023/11/08/3/4731060.jpg?ts=1699471018734" alt="تصویر خبر">
+              <div>
+                <h3 class="font-semibold text-blue-900 text-base mb-2">تبدیل تهران به فضایی تئاتری؛ تعهدات مالی تئاتر «شهر» انجام می‌شود</h3>
+                <p class="text-xs font-light text-stone-700 leading-loose">دبیر هفتمین جشنواره تئاتر «شهر» تأکید کرد تلاش بر این است در ایام برگزاری جشنواره، شهر تهران به فضایی تئاتری تبدیل شود.</p>
+              </div>
+            </div>
+            <!-- news item -->
+            <div class="flex gap-4">
+              <img class="w-36 h-25 object-cover rounded-xl shadow-lg" src="https://media.mehrnews.com/d/2025/11/14/3/5772972.jpg?ts=1763108728772" alt="تصویر خبر">
+              <div>
+                <h3 class="font-semibold text-blue-900 text-base mb-2">حقوق جایگزین مهریه؛ امنیت زن در عقدنامه چگونه تضمین می‌شود؟</h3>
+                <p class="text-xs font-light text-stone-700 leading-loose">یک حقوقدان گفت: هم‌زمان با تغییر رویکرد قانون‌گذار، زنان ترجیح می‌دهند امنیت خود را نه با مهریه‌های بالا، بلکه با شروط ضمن عقد تأمین کنند.</p>
+              </div>
+            </div>
+            <!-- news item -->
+            <div class="flex gap-4">
+              <img class="w-36 h-25 object-cover rounded-xl shadow-lg" src="https://media.mehrnews.com/d/2025/11/15/3/5774453.jpg?ts=1763198458070" alt="تصویر خبر">
+              <div>
+                <h3 class="font-semibold text-blue-900 text-base mb-2">احتمال ارجاع پرونده هسته‌ای ایران به شورای امنیت ضعیف است</h3>
+                <p class="text-xs font-light text-stone-700 leading-loose">خبرنگار روزنامه آمریکایی وال‌استریت‌ژورنال، احتمال ارجاع پرونده هسته ای ایران به شورای امنیت سازمان ملل را ضعیف ارزیابی کرد.</p>
+              </div>
+            </div>
+            <!-- news item -->
+            <div class="flex gap-4">
+              <img class="w-36 h-25 object-cover rounded-xl shadow-lg" src="https://media.mehrnews.com/d/2025/11/15/3/5774196.jpg?ts=1763188869473" alt="تصویر خبر">
+              <div>
+                <h3 class="font-semibold text-blue-900 text-base mb-2">از واریان تا پرده نقره‌ای؛ مهران رجبی هنرمندی که صمیمیت را بازی می‌کند</h3>
+                <p class="text-xs font-light text-stone-700 leading-loose">کرج- مهران رجبی، بازیگر سینما و تلویزیون با بیش از ۲۰۰ اثر، ریشه در روستای واریان البرز دارد و سادگی زندگی روستایی را در نگاه هنری خود بازتاب می‌دهد.</p>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <!-- cats news -->
+            <div class="bg-stone-200 rounded-4xl grid grid-cols-3 gap-3 py-5 px-3 overflow-hidden">
+              <!-- cat -->
+              <div>
+                <h3 class="bg-sky-500 text-white font-medium text-sm py-0.5 px-4 rounded-full inline">سیاسی</h3>
+                <ul class="mt-3">
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">دشمن مایوس، مقابل «مظهر امید» زانو زده است</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">کدام کشورها بیشترین نفت را در طول نسل‌کشی غزه به اسرائیل فروختند</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">کمبود مواد اولیه، چالش مهم تولید در سال ۱۴۰۴</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">تصویری باشکوه از بزرگترین پلنگ دنیا در سالوک ثبت شد</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">اهدای خودرو به هوافضای سپاه؛ وصیت متفاوت یک شهید در «بدون تعارف»</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">بازدید فرمانده کل ارتش از روند احداث دیوار مرزی در شمال شرق کشور</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- cat -->
+              <div>
+                <h3 class="bg-sky-500 text-white font-medium text-sm py-0.5 px-4 rounded-full inline">فرهنگی</h3>
+                <ul class="mt-3">
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">دشمن مایوس، مقابل «مظهر امید» زانو زده است</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">کدام کشورها بیشترین نفت را در طول نسل‌کشی غزه به اسرائیل فروختند</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">کمبود مواد اولیه، چالش مهم تولید در سال ۱۴۰۴</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">تصویری باشکوه از بزرگترین پلنگ دنیا در سالوک ثبت شد</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">اهدای خودرو به هوافضای سپاه؛ وصیت متفاوت یک شهید در «بدون تعارف»</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">بازدید فرمانده کل ارتش از روند احداث دیوار مرزی در شمال شرق کشور</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- cat -->
+              <div>
+                <h3 class="bg-sky-500 text-white font-medium text-sm py-0.5 px-4 rounded-full inline">اجتماعی</h3>
+                <ul class="mt-3">
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">دشمن مایوس، مقابل «مظهر امید» زانو زده است</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">کدام کشورها بیشترین نفت را در طول نسل‌کشی غزه به اسرائیل فروختند</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">کمبود مواد اولیه، چالش مهم تولید در سال ۱۴۰۴</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">تصویری باشکوه از بزرگترین پلنگ دنیا در سالوک ثبت شد</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">اهدای خودرو به هوافضای سپاه؛ وصیت متفاوت یک شهید در «بدون تعارف»</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">بازدید فرمانده کل ارتش از روند احداث دیوار مرزی در شمال شرق کشور</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- blue news -->
+            <div class="bg-sky-600 rounded-4xl grid grid-cols-2 gap-3 py-5 px-3 overflow-hidden text-white">
+              <!-- big image news -->
+              <div>
+                <img class="w-full rounded-3xl border-4 border-white/50" src="https://media.mehrnews.com/d/2025/04/14/3/5459877.jpg?ts=1744620411388" alt="blue-news-image">
+                <h3 class="font-semibold text-lg mt-3">ظرفیت هیئت‌ها در بازسازی پیوندهای انسانی عصر دیجیتال</h3>
+                <p class="font-light text-xs mt-2 leading-5">هیئت با تکیه بر سرمایه اجتماعی و اعتماد نهادینه‌شده‌ای که ایجاد می‌کند، می‌تواند به ارائه سبک زندگی اسلامی و الگویی برای تحول جامعه در سطح خرد بپردازد.</p>
+              </div>
+              <div>
+                <ul class="space-y-3">
+                  <li class="flex items-top gap-2">
+                    <span class="size-1.5 rounded-full bg-amber-400 block shrink-0 mt-1.5"></span>
+                    <a class="text-xs hover:text-amber-300" href="#">هشدار هلال‌احمر در پی ورود سامانه بارشی به کشور</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-1.5 rounded-full bg-amber-400 block shrink-0 mt-1.5"></span>
+                    <a class="text-xs hover:text-amber-300" href="#">۳۵۰ کانون «یاریگران زندگی» در استان سمنان فعال است</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-1.5 rounded-full bg-amber-400 block shrink-0 mt-1.5"></span>
+                    <a class="text-xs hover:text-amber-300" href="#">بانک صادرات ایران شایسته جایگاه‌های برتر نظام بانکی است</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-1.5 rounded-full bg-amber-400 block shrink-0 mt-1.5"></span>
+                    <a class="text-xs hover:text-amber-300" href="#">تمدید مهلت فراخوان دوسالانه تجسمی کانون پرورش فکری کودکان و نوجوانان</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-1.5 rounded-full bg-amber-400 block shrink-0 mt-1.5"></span>
+                    <a class="text-xs hover:text-amber-300" href="#">کاهش ۱۰۰ درصدی بارندگی‌ها در لرستان؛ تنها ۱۰ درصد حجم سدها پُر است</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-1.5 rounded-full bg-amber-400 block shrink-0 mt-1.5"></span>
+                    <a class="text-xs hover:text-amber-300" href="#">کامیون‌های یخچال‌دار چگونه کیفیت باربری را تغییر دادند؟</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-1.5 rounded-full bg-amber-400 block shrink-0 mt-1.5"></span>
+                    <a class="text-xs hover:text-amber-300" href="#">طیبی: ۱۷ هزار لیتر سوخت قاچاق در اهواز ضبط شد</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-1.5 rounded-full bg-amber-400 block shrink-0 mt-1.5"></span>
+                    <a class="text-xs hover:text-amber-300" href="#">ابراهیمی: مسمومیت با گاز مونوکسیدکربن خطر روزهای سرد سال</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- cats news 2 -->
+            <div class="bg-stone-200 rounded-4xl grid grid-cols-3 gap-3 py-5 px-3 overflow-hidden">
+              <!-- cat -->
+              <div>
+                <h3 class="bg-sky-500 text-white font-medium text-sm py-0.5 px-4 rounded-full inline">اقتصادی</h3>
+                <ul class="mt-3">
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">دشمن مایوس، مقابل «مظهر امید» زانو زده است</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">کدام کشورها بیشترین نفت را در طول نسل‌کشی غزه به اسرائیل فروختند</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">کمبود مواد اولیه، چالش مهم تولید در سال ۱۴۰۴</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">تصویری باشکوه از بزرگترین پلنگ دنیا در سالوک ثبت شد</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">اهدای خودرو به هوافضای سپاه؛ وصیت متفاوت یک شهید در «بدون تعارف»</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">بازدید فرمانده کل ارتش از روند احداث دیوار مرزی در شمال شرق کشور</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- cat -->
+              <div>
+                <h3 class="bg-sky-500 text-white font-medium text-sm py-0.5 px-4 rounded-full inline">ورزشی</h3>
+                <ul class="mt-3">
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">دشمن مایوس، مقابل «مظهر امید» زانو زده است</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">کدام کشورها بیشترین نفت را در طول نسل‌کشی غزه به اسرائیل فروختند</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">کمبود مواد اولیه، چالش مهم تولید در سال ۱۴۰۴</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">تصویری باشکوه از بزرگترین پلنگ دنیا در سالوک ثبت شد</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">اهدای خودرو به هوافضای سپاه؛ وصیت متفاوت یک شهید در «بدون تعارف»</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">بازدید فرمانده کل ارتش از روند احداث دیوار مرزی در شمال شرق کشور</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- cat -->
+              <div>
+                <h3 class="bg-sky-500 text-white font-medium text-sm py-0.5 px-4 rounded-full inline">فناوری</h3>
+                <ul class="mt-3">
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">دشمن مایوس، مقابل «مظهر امید» زانو زده است</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">کدام کشورها بیشترین نفت را در طول نسل‌کشی غزه به اسرائیل فروختند</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">کمبود مواد اولیه، چالش مهم تولید در سال ۱۴۰۴</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">تصویری باشکوه از بزرگترین پلنگ دنیا در سالوک ثبت شد</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">اهدای خودرو به هوافضای سپاه؛ وصیت متفاوت یک شهید در «بدون تعارف»</a>
+                  </li>
+                  <li class="flex items-top gap-2">
+                    <span class="size-2 rounded-full bg-sky-500 block shrink-0 mt-1.5"></span>
+                    <a href="#" class="font-light text-[12px] text-black hover:text-sky-600 hover:font-medium">بازدید فرمانده کل ارتش از روند احداث دیوار مرزی در شمال شرق کشور</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- three small columns -->
+            <div class="grid grid-cols-3 gap-2 min-h-65">
+              <!-- column -->
+              <div class="rounded-3xl overflow-hidden relative">
+                <img class="size-full object-cover" src="https://media.mehrnews.com/d/2025/04/29/3/5481344.jpg?ts=1745916287810" alt="bg">
+                <div class="w-full absolute bottom-0 h-3/5 text-white p-2 bg-black/30 backdrop-blur-sm">
+                  <h3 class="font-semibold text-[13px]">تاریخ شفاهی علوم انسانی می‌تواند جریان سازی و گفتمان سازی کند</h3>
+                  <p class="font-light text-xs mt-2 leading-4">بازخوانی تجربه‌های علوم انسانی، راهی برای حفظ حافظه فکری جامعه و ترسیم مسیر آینده دانش و فرهنگ ایرانی است.</p>
+                </div>
+              </div>
+              <!-- column -->
+              <div class="rounded-3xl overflow-hidden relative">
+                <img class="size-full object-cover" src="https://media.mehrnews.com/d/2020/11/24/3/3610036.jpg" alt="bg">
+                <div class="w-full absolute bottom-0 h-3/5 text-white p-2 bg-black/30 backdrop-blur-sm">
+                  <h3 class="font-semibold text-[13px]">چرا شیعیان به نیابت از امام عسکری(ع) طواف می کنند و احرام می‌بندند؟</h3>
+                  <p class="font-light text-xs mt-2 leading-4">یکی از کارهایی که شیعیانی که به حج تمتع و عمره مفرده مشرف می شوند، انجام می دهند طواف یا محرم شدن به نیابت از رهبر و مولایشان امام حسن عسکری (ع) است.</p>
+                </div>
+              </div>
+              <!-- column -->
+              <div class="rounded-3xl overflow-hidden relative">
+                <img class="size-full object-cover" src="https://media.mehrnews.com/d/2025/09/27/3/5698895.jpg?ts=1758954494556" alt="bg">
+                <div class="w-full absolute bottom-0 h-3/5 text-white p-2 bg-black/30 backdrop-blur-sm">
+                  <h3 class="font-semibold text-[13px]">قدرتی فراتر از سلاح؛سرمایه نمادین مقاومت پس از شهادت نصرالله چگونه شد؟</h3>
+                  <p class="font-light text-xs mt-2 leading-4">با شهادت نصرالله، دشمنان مقاومت گمان کردند با حذف فیزیکی رهبر، می‌توانند سرمایه نمادین او را نابود کنند. اما واقعیت برعکس شد.</p>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-radial-[at_98%_5%] from-blue-500 to-sky-900 to-75% text-white text-sm text-center h-78 relative">
+          <!-- background logo -->
+          <img src="./res/svg/logo-footer.svg" alt="footer logo" class="absolute left-0 bottom-0 w-auto h-73">
+          <!-- white logo-title -->
+          <div class="absolute right-8 top-10 flex items-center gap-x-2">
+            <img class="w-12" src="./res/svg/logo-white.svg" alt="logo">
+            <h3 class="font-black text-3xl">شــــهرآوران</h3>
+          </div>
+          <!-- footer menu -->
+          <div class="bg-white/20 rounded-full py-2 px-8 absolute top-10 left-40 shadow-lg">
+            <ul class="flex justify-between items-center gap-5">
+              <li class="font-medium text-sm hover:text-sky-300">
+                <a href="#">صفحه اصلی</a>
+              </li>
+              <li class="font-medium text-sm hover:text-sky-300">
+                <a href="#">ارتباط با ما</a>
+              </li>
+              <li class="font-medium text-sm hover:text-sky-300">
+                <a href="#">درباره ما</a>
+              </li>
+            </ul>
+          </div>
+          <!-- copyright -->
+          <div class="absolute bottom-0 inset-x-0 z-20 min-h-30">
+            <p class="text-lg mb-5">
+              تمامی حقوق برای <a href="/" class="text-sky-200 font-medium hover:text-amber-300">شــهرآوران</a> محفوظ است.
+            </p>
+            <!-- social links -->
+            <ul class="flex flex-row-reverse items-center justify-center gap-3">
+              <!-- whatsapp -->
+              <li class="size-9 bg-sky-600 rounded-full grid place-content-center">
+                <a href="#">
+                  <svg class="size-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                      <path fill="currentColor" fill-rule="evenodd" d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z" clip-rule="evenodd"/>
+                      <path fill="currentColor" d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"/>
+                  </svg>
+                </a>
+              </li>
+              <!-- instagram -->
+              <li class="size-9 bg-sky-600 rounded-full grid place-content-center">
+                <a href="#">
+                  <svg class="size-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+                  </svg>
+                </a>
+              </li>
+              <!-- telegram -->
+              <li class="size-9 bg-sky-600 rounded-full grid place-content-center">
+                <a href="#">
+                  <svg class="size-5 fill-current" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 24 24" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421"><path d="M18.384 22.779a1.19 1.19 0 0 0 1.107.145 1.16 1.16 0 0 0 .724-.84C21.084 18 23.192 7.663 23.983 3.948a.78.78 0 0 0-.26-.758.8.8 0 0 0-.797-.14C18.733 4.602 5.82 9.447.542 11.4a.827.827 0 0 0-.542.799c.012.354.25.661.593.764 2.367.708 5.474 1.693 5.474 1.693s1.452 4.385 2.209 6.615c.095.28.314.5.603.576a.866.866 0 0 0 .811-.207l3.096-2.923s3.572 2.619 5.598 4.062zm-11.01-8.677 1.679 5.538.373-3.507 10.185-9.186a.277.277 0 0 0 .033-.377.284.284 0 0 0-.376-.064L7.374 14.102z"/></svg>
+                </a>
+              </li>
+              <!-- eitaa -->
+              <li class="size-9 bg-sky-600 rounded-full grid place-content-center">
+                <a href="#">
+                  <svg class="size-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.968 23.942a6.624 6.624 0 0 1-2.332-.83c-1.62-.929-2.829-2.593-3.217-4.426-.151-.717-.17-1.623-.15-7.207C.288 5.47.274 5.78.56 4.79c.142-.493.537-1.34.823-1.767C2.438 1.453 3.99.445 5.913.08c.384-.073.94-.08 6.056-.08 6.251 0 6.045-.009 7.066.314a6.807 6.807 0 0 1 4.314 4.184c.33.937.346 1.087.369 3.555l.02 2.23-.391.268c-.558.381-1.29 1.06-2.316 2.15-1.182 1.256-2.376 2.42-2.982 2.907-1.309 1.051-2.508 1.651-3.726 1.864-.634.11-1.682.067-2.302-.095-.553-.144-.517-.168-.726.464a6.355 6.355 0 0 0-.318 1.546l-.031.407-.146-.03c-1.215-.241-2.419-1.285-2.884-2.5a3.583 3.583 0 0 1-.26-1.219l-.016-.34-.309-.284c-.644-.59-1.063-1.312-1.195-2.061-.212-1.193.34-2.542 1.538-3.756 1.264-1.283 3.127-2.29 4.953-2.68.658-.14 1.818-.177 2.403-.075 1.138.198 2.067.773 2.645 1.639.182.271.195.31.177.555a.812.812 0 0 1-.183.493c-.465.651-1.848 1.348-3.336 1.68-2.625.585-4.294-.142-4.033-1.759.026-.163.04-.304.031-.313-.032-.032-.293.104-.575.3-.479.334-.903.984-1.05 1.607-.036.156-.05.406-.034.65.02.331.053.454.192.736.092.186.275.45.408.589l.24.251-.096.122a4.845 4.845 0 0 0-.677 1.217 3.635 3.635 0 0 0-.105 1.815c.103.461.421 1.095.739 1.468.242.285.797.764.886.764.024 0 .044-.048.044-.106.001-.23.184-.973.326-1.327.423-1.058 1.351-1.96 2.82-2.74.245-.13.952-.47 1.572-.757 1.36-.63 2.103-1.015 2.511-1.305 1.176-.833 1.903-2.065 2.14-3.625.086-.57.086-1.634 0-2.207-.368-2.438-2.195-4.096-4.818-4.37-2.925-.307-6.648 1.953-8.942 5.427-1.116 1.69-1.87 3.565-2.187 5.443-.123.728-.169 2.08-.093 2.75.193 1.704.822 3.078 1.903 4.156a6.531 6.531 0 0 0 1.87 1.313c2.368 1.13 4.99 1.155 7.295.071.996-.469 1.974-1.196 3.023-2.25 1.02-1.025 1.71-1.88 3.592-4.458 1.04-1.423 1.864-2.368 2.272-2.605l.15-.086-.019 3.091c-.018 2.993-.022 3.107-.123 3.561-.6 2.678-2.54 4.636-5.195 5.242l-.468.107-5.775.01c-4.734.008-5.85-.002-6.19-.056z"/></svg>
+                </a>
+              </li>
+              <!-- x -->
+              <li class="size-9 bg-sky-600 rounded-full grid place-content-center">
+                <a href="#">
+                  <svg class="size-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/>
+                  </svg>
+                </a>
+              </li>
+              <!-- aparat -->
+              <li class="size-9 bg-sky-600 rounded-full grid place-content-center">
+                <a href="#">
+                  <svg class="size-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.001 1.594c-9.27-.003-13.913 11.203-7.36 17.758a10.403 10.403 0 0 0 17.76-7.355c0-5.744-4.655-10.401-10.4-10.403zM6.11 6.783c.501-2.598 3.893-3.294 5.376-1.103 1.483 2.19-.422 5.082-3.02 4.582A2.97 2.97 0 0 1 6.11 6.783zm4.322 8.988c-.504 2.597-3.897 3.288-5.377 1.096-1.48-2.192.427-5.08 3.025-4.579a2.97 2.97 0 0 1 2.352 3.483zm1.26-2.405c-1.152-.223-1.462-1.727-.491-2.387.97-.66 2.256.18 2.04 1.334a1.32 1.32 0 0 1-1.548 1.053zm6.198 3.838c-.501 2.598-3.893 3.293-5.376 1.103-1.484-2.191.421-5.082 3.02-4.583a2.97 2.97 0 0 1 2.356 3.48zm-1.967-5.502c-2.598-.501-3.293-3.896-1.102-5.38 2.19-1.483 5.081.422 4.582 3.02a2.97 2.97 0 0 1-3.48 2.36zM13.59 23.264l2.264.61a3.715 3.715 0 0 0 4.543-2.636l.64-2.402a11.383 11.383 0 0 1-7.448 4.428zm7.643-19.665L18.87 2.97a11.376 11.376 0 0 1 4.354 7.62l.65-2.459A3.715 3.715 0 0 0 21.231 3.6zM.672 13.809l-.541 2.04a3.715 3.715 0 0 0 2.636 4.543l2.107.562a11.38 11.38 0 0 1-4.203-7.145zM10.357.702 8.15.126a3.715 3.715 0 0 0-4.547 2.637l-.551 2.082A11.376 11.376 0 0 1 10.358.702z"/></svg>
+                </a>
+              </li>
+              <!-- soroush -->
+              <li class="size-9 bg-sky-600 rounded-full grid place-content-center">
+                <a href="#">
+                  <svg class="size-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19.099 23.95-.524-.282a791.437 791.437 0 0 1-1.992-1.079l-.12-.063-.083.035c-.222.093-.754.272-1.118.378a11.717 11.717 0 0 1-3.404.459 11.492 11.492 0 0 1-3.212-.485 11.786 11.786 0 0 1-5.284-3.299A11.578 11.578 0 0 1 1.4 16.701 10.57 10.57 0 0 1 .751 15c-.31-1.06-.45-2.005-.467-3.14-.012-.785.031-1.377.154-2.107a11.68 11.68 0 0 1 3.005-6.056 11.812 11.812 0 0 1 3.777-2.69 11.694 11.694 0 0 1 3.665-.96c.123-.013.26-.028.304-.034.046-.007.377-.012.816-.012h.737l.382.045c.72.086.948.122 1.414.224.938.207 1.803.512 2.67.94.499.247.74.386 1.215.697a11.412 11.412 0 0 1 2.16 1.818c.435.466.721.822 1.08 1.345a11.628 11.628 0 0 1 1.992 5.345c.101.91.08 2.055-.056 2.998-.136.94-.441 2.02-.819 2.898a11.855 11.855 0 0 1-2.016 3.161 13.9 13.9 0 0 1-1.176 1.158l-.05.042-.002 1.414c0 .778-.006 1.488-.011 1.578l-.01.163-.05.087-.051.087H19.3c-.111 0-.113-.001-.202-.05zM12.2 19.366a6.88 6.88 0 0 0 3.573-1.429c.39-.307.797-.72 1.09-1.107.291-.387.467-.709.647-1.185.376-.994.43-2.024.17-3.205a5.5 5.5 0 0 0-.347-1.058 10.294 10.294 0 0 0-.522-1.038c-.01-.014-.015-.029-.011-.032.017-.017-.307-.477-.763-1.085-.628-.837-.883-1.212-1.092-1.608-.19-.36-.298-.64-.348-.9a2.445 2.445 0 0 1-.018-.56 2.27 2.27 0 0 1 .826-1.482l.043-.033-.023-.023c-.031-.03-.106-.039-.384-.04a4.494 4.494 0 0 0-2.053.483c-.389.191-.7.396-1.035.682-.153.13-.473.447-.473.468a.718.718 0 0 1-.085.122 5.035 5.035 0 0 0-.983 2.132c-.051.27-.066.47-.067.894 0 .76.047.997.448 2.288.23.74.316 1.092.374 1.527a5.19 5.19 0 0 1-.005 1.007 3.349 3.349 0 0 1-.944 1.868 3.293 3.293 0 0 1-2.035.972 3.768 3.768 0 0 1-1.198-.082 2.278 2.278 0 0 1-.495-.173c-.15-.067-.392-.155-.4-.146-.007.006.123.202.2.304.188.25.468.533.841.852.285.244.3.256.467.373a6.994 6.994 0 0 0 3.674 1.24c.212.01.71-.005.928-.026z"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </main>
 </body>
 </html>
