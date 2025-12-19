@@ -242,8 +242,26 @@
   .-right-\[31px\] {
     right: calc(31px * -1);
   }
+  .-right-\[40px\] {
+    right: calc(40px * -1);
+  }
   .-right-\[45px\] {
     right: calc(45px * -1);
+  }
+  .-right-\[46px\] {
+    right: calc(46px * -1);
+  }
+  .-right-\[47px\] {
+    right: calc(47px * -1);
+  }
+  .-right-\[48px\] {
+    right: calc(48px * -1);
+  }
+  .-right-\[50px\] {
+    right: calc(50px * -1);
+  }
+  .-right-\[51px\] {
+    right: calc(51px * -1);
   }
   .right-8 {
     right: calc(var(--spacing) * 8);
@@ -430,11 +448,23 @@
   .shrink-0 {
     flex-shrink: 0;
   }
+  .origin-top-left {
+    transform-origin: 0 0;
+  }
   .origin-top-right {
     transform-origin: 100% 0;
   }
   .-rotate-45 {
     rotate: calc(45deg * -1);
+  }
+  .-rotate-90 {
+    rotate: calc(90deg * -1);
+  }
+  .rotate-45 {
+    rotate: 45deg;
+  }
+  .rotate-90 {
+    rotate: 90deg;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
