@@ -8,7 +8,7 @@
 	</head>
 	<body class="antialiased bg-stone-100">
 		<!-- Header -->
-		<header class="flex justify-between items-center bg-stone-50 rounded-full shadow-md w-9/10 xl:w-[1200px] mt-5 mb-5 lg:mb-8 mx-auto py-2 lg:py-3 px-3 lg:px-5">
+		<header class="flex justify-between items-center bg-stone-50 rounded-full shadow-md w-9/10 xl:w-300 mt-5 mb-5 lg:mb-8 mx-auto py-2 lg:py-3 px-3 lg:px-5">
 			<!-- logo title -->
 			<div class="flex items-center gap-3">
 				<img src="./res/svg/logo.svg" alt="لوگوی شهرآوران" class="w-6 lg:w-10 h-auto">
@@ -86,7 +86,7 @@
 		<!-- main content -->
 		<main>
 			<!-- Featured -->
-			<div class="grid grid-cols-1 lg:grid-cols-4 gap-8 px-3 lg:px-1 w-full xl:w-[1200px] mx-auto">
+			<div class="grid grid-cols-1 lg:grid-cols-4 gap-8 px-3 lg:px-1 w-full xl:w-300 mx-auto">
 				<!-- news list -->
 				<section class="hidden lg:block">
 					<ul class="space-y-6">
@@ -173,7 +173,7 @@
 				<a href="#" class="category shrink-0">سلامت</a>
 			</section>
 			<!-- Middle -->
-			<section class="grid grid-cols-1 lg:grid-cols-2 gap-7 mb-10 w-full xl:w-[1200px] mx-auto px-5 xl:px-0">
+			<section class="grid grid-cols-1 lg:grid-cols-2 gap-7 mb-10 w-full xl:w-300 mx-auto px-5 xl:px-0">
 				<!-- main news -->
 				<div class="bg-white rounded-4xl shadow-xl px-5 py-5 md:py-7 flex flex-col gap-8 md:gap-5">
 					<!-- news item -->
@@ -519,17 +519,17 @@
 				</div>
 			</section>
 			<!-- hot tags -->
-			<section class="bg-stone-200 w-full flex my-18 justify-between">
+			<section class="bg-stone-200 w-full flex my-18">
 				<!-- label -->
 				<div class="relative bg-blue-800 text-white py-4 px-5 flex items-center gap-2 shrink-0">
 					<svg class="size-7 text-amber-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z" /></svg>
 					<h3 class="font-semibold text-2xl">تگ‌های داغ</h3>
-					<div class="absolute w-[45px] overflow-hidden -left-[45px]">
+					<div class="absolute w-11.25 overflow-hidden -left-11.25">
 						<div class="h-16 bg-blue-800 -rotate-45 transform origin-top-right"></div>
 					</div>
 				</div>
 				<!-- tags -->
-				<div class="flex items-center pr-10 gap-1.5 overflow-scroll scrollbar-hidden grow">
+				<div class="flex items-center px-10 gap-1.5 overflow-scroll scrollbar-hidden grow">
                   <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">ایران</a>
                   <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">پاندمی</a>
                   <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">قانون</a>
@@ -549,12 +549,14 @@
                   <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">رهبری</a>
                   <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">انقلاب</a>
 				</div>
-				<div class="w-10 bg-blue-800 relative">
-					<div>
-					</div>
-					<div class="absolute w-[45px] overflow-hidden -right-[45px]">
+				<!-- left scroller -->
+				<div class="w-10 bg-blue-800 relative flex items-center shrink-0">
+					<div class="absolute w-11.25 overflow-hidden -right-11.25">
 							<div class="h-16 bg-blue-800 rotate-45 transform origin-top-left"></div>
 					</div>
+					<a class="-mr-1.5 z-10 border-2 size-7 rounded-full border-white p-2 grid place-content-center text-white hover:border-amber-300 hover:text-amber-300 transition" href="#">
+						<svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+					</a>
 				</div>
 			</section>
 		</main>
