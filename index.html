@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>شهرآوران</title>
 		<link rel="stylesheet" href="./res/css/styles.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	</head>
 	<body class="antialiased bg-stone-100">
 		<!-- Header -->
@@ -519,43 +520,54 @@
 				</div>
 			</section>
 			<!-- hot tags -->
-			<section class="bg-stone-200 w-full flex my-18">
+			<section 
+				x-data 
+				class="bg-stone-200 w-full flex my-10 md:my-18"
+			>
 				<!-- label -->
-				<div class="relative bg-blue-800 text-white py-4 px-5 flex items-center gap-2 shrink-0">
-					<svg class="size-7 text-amber-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z" /></svg>
-					<h3 class="font-semibold text-2xl">تگ‌های داغ</h3>
-					<div class="absolute w-11.25 overflow-hidden -left-11.25">
-						<div class="h-16 bg-blue-800 -rotate-45 transform origin-top-right"></div>
+				<div class="relative bg-blue-800 text-white py-4 px-1 md:px-5 flex items-center gap-2 shrink-0">
+					<svg class="size-5 md:size-7 text-amber-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z" /></svg>
+					<h3 class="font-medium md:font-semibold text-sm md:text-2xl">تگ‌های داغ</h3>
+					<div class="absolute w-9 md:w-11.25 overflow-hidden -left-9 md:-left-11.25">
+						<div class="h-13 md:h-16 bg-blue-800 -rotate-45 transform origin-top-right"></div>
 					</div>
 				</div>
 				<!-- tags -->
-				<div class="flex items-center px-10 gap-1.5 overflow-scroll scrollbar-hidden grow">
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">ایران</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">پاندمی</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">قانون</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">سوریه</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">جنگ</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">ملت</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">آخرالزمان</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">زمستان</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">سال نو</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">رزمایش</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">طوفان الاقصی</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">فناوری نظامی</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">هوش مصنوعی</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">فلسطین</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">رژیم صهیونیستی</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">شهدا</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">رهبری</a>
-                  <a href="#" class="text-blue-800 font-black text-sm py-1 px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">انقلاب</a>
+				<div class="flex items-center px-7 md:px-10 gap-1 sm:gap-1.5 overflow-scroll scrollbar-hidden grow">
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">ایران</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">پاندمی</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">قانون</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">سوریه</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">جنگ</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">ملت</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">آخرالزمان</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">زمستان</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">سال نو</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">رزمایش</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">طوفان الاقصی</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">فناوری نظامی</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">هوش مصنوعی</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">فلسطین</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">رژیم صهیونیستی</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">شهدا</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">رهبری</a>
+                  <a href="#" class="text-blue-800 font-black text-xs md:text-sm py-1 px-1.5 md:px-3 rounded-full border-2 border-blue-800 shrink-0 hover:bg-blue-800 hover:text-amber-300 transition duration-300">انقلاب</a>
 				</div>
 				<!-- left scroller -->
-				<div class="w-10 bg-blue-800 relative flex items-center shrink-0">
-					<div class="absolute w-11.25 overflow-hidden -right-11.25">
-							<div class="h-16 bg-blue-800 rotate-45 transform origin-top-left"></div>
+				<div class="w-5 md:w-10 bg-blue-800 relative flex items-center shrink-0">
+					<!-- triangle -->
+					<div class="absolute w-9 md:w-11.25 overflow-hidden -right-9 md:-right-11.25">
+							<div class="h-13 md:h-16 bg-blue-800 rotate-45 transform origin-top-left"></div>
 					</div>
-					<a class="-mr-1.5 z-10 border-2 size-7 rounded-full border-white p-2 grid place-content-center text-white hover:border-amber-300 hover:text-amber-300 transition" href="#">
-						<svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+					<!-- arrow -->
+					<a href="#"
+						x-on:click.prevent="
+							$el.closest('section')
+								.querySelector('.overflow-scroll')
+								.scrollBy({ left: -200, behavior: 'smooth' })
+						"
+						class="-mr-1.5 z-10 border-2 size-5 md:size-7 rounded-full border-white p-2 grid place-content-center text-white hover:border-amber-300 hover:text-amber-300 transition">
+						<svg class="size-3 md:size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
 					</a>
 				</div>
 			</section>
