@@ -58,7 +58,10 @@
 
 @layer components {
     .category {
-        @apply bg-radial-[at_20%_20%] from-sky-500 to-blue-800 to-75% text-white rounded-full py-2 px-3 lg:py-3 lg:px-5 text-xs lg:text-sm text-center inline shadow-lg shadow-blue-800/50 hover:from-amber-300 hover:to-amber-900 hover:shadow-amber-700/50;
+      @apply bg-radial-[at_20%_20%] from-sky-500 to-blue-800 to-75% text-white rounded-full py-2 px-3 lg:py-3 lg:px-5 text-xs lg:text-sm text-center inline shadow-lg shadow-blue-800/50 hover:from-amber-300 hover:to-amber-900 hover:shadow-amber-700/50;
+    }
+    .province {
+      @apply hover:fill-sky-500;
     }
 }
 
